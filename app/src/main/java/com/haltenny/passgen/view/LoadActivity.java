@@ -1,12 +1,13 @@
-package com.haltenny.passgen;
+package com.haltenny.passgen.view;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageView;
+import com.haltenny.passgen.R;
 
-public class MainActivity extends Activity {
+public class LoadActivity extends Activity {
 
     public Button btn;
     private Button btn2;
@@ -26,7 +27,7 @@ public class MainActivity extends Activity {
         ImageView imageView = findViewById(R.id.imageView2);
         imageView.setImageDrawable(getResources().getDrawable(getResources().getIdentifier("@drawable/logo", null, getPackageName())));
         btn.setOnClickListener(v -> {
-            Intent i = new Intent(this, passwd_choose.class);
+            Intent i = new Intent(this, ChooseActivity.class);
             startActivity(i);
         });
 

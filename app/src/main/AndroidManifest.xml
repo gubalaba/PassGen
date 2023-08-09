@@ -10,24 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".max_symbols"
+            android:name=".view.password_types.Hard"
             android:exported="false"
             />
 
         <activity
-            android:name=".sixteen_symbols"
+            android:name=".view.password_types.Medium"
             android:exported="false"
             />
         <activity
-            android:name=".eight_symbols"
+            android:name=".view.password_types.PinCode"
             android:exported="false"
             />
         <activity
-            android:name=".passwd_choose"
+            android:name=".view.ChooseActivity"
             android:exported="false"
             />
         <activity
-            android:name=".MainActivity"
+            android:name=".view.LoadActivity"
             android:exported="true"
             >
             <intent-filter>

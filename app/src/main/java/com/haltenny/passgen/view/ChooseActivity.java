@@ -1,13 +1,15 @@
-package com.haltenny.passgen;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.haltenny.passgen.view;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import com.haltenny.passgen.R;
+import com.haltenny.passgen.view.password_types.PinCode;
+import com.haltenny.passgen.view.password_types.Hard;
+import com.haltenny.passgen.view.password_types.Medium;
 
-public class passwd_choose extends Activity {
+public class ChooseActivity extends Activity {
 
     private Button btn;
     private Button btn2;
@@ -18,22 +20,22 @@ public class passwd_choose extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_passwd_choose);
 
-        btn = (Button)findViewById(R.id.button2);
+        btn = findViewById(R.id.button2);
 
         btn.setOnClickListener(v -> {
-            Intent i = new Intent(this,eight_symbols.class);
+            Intent i = new Intent(this, PinCode.class);
             startActivity(i);
         });
-        btn2 = (Button)findViewById(R.id.button3);
+        btn2 = findViewById(R.id.button3);
 
         btn2.setOnClickListener(v -> {
-            Intent i = new Intent(this,sixteen_symbols.class);
+            Intent i = new Intent(this, Medium.class);
             startActivity(i);
         });
-        btn3 = (Button)findViewById(R.id.button4);
+        btn3 = findViewById(R.id.button4);
 
         btn3.setOnClickListener(v -> {
-            Intent i = new Intent(this,max_symbols.class);
+            Intent i = new Intent(this, Hard.class);
             startActivity(i);
         });
     }
