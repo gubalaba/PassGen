@@ -1,4 +1,4 @@
-package com.haltenny.passgen.model.password.impl;
+package com.haltenny.passgen.viewmodel.password.impl;
 
 import com.haltenny.passgen.model.password.PasswordService;
 

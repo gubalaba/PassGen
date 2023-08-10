@@ -2,6 +2,7 @@ package com.haltenny.passgen.view.password_types;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.SeekBar;
@@ -16,7 +17,6 @@ public class Hard extends Activity {
     TextView passwdText;
     Button generateButton;
     Button copyButton;
-
     String passwd = "";
 
     @Override
@@ -29,7 +29,6 @@ public class Hard extends Activity {
         copyButton = findViewById(R.id.copy_button1);
 
         passwdText.setText(passwd);
-
         String finalPasswd = passwd;
         var copyListener = new CopyListener(this, finalPasswd);
         passwdText.setOnClickListener(copyListener);

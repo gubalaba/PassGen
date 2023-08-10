@@ -1,4 +1,4 @@
-package com.haltenny.passgen.viewmodel;
+package com.haltenny.passgen.viewmodel.database.impl;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -8,11 +8,12 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
+import com.haltenny.passgen.viewmodel.database.DatabaseService;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
-public class Database extends SQLiteOpenHelper {
+public class DatabaseServiceImpl extends SQLiteOpenHelper implements DatabaseService {
 
     // поля базы данных
     Context context; // поле текущего контекста
@@ -26,7 +27,7 @@ public class Database extends SQLiteOpenHelper {
     static String columnDescription = "description";  // поле колонки для описаний записей в таблице в БД
 
     // конструктор
-    public Database(@Nullable Context context) {
+    public DatabaseServiceImpl(@Nullable Context context) {
         // задание параметров (контекст, название БД, курсор, версия БД)
         super(context, DatabaseName, null, DatabaseVersion);
         this.context = context;

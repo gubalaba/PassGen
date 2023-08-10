@@ -3,7 +3,7 @@ package com.haltenny.passgen.viewmodel.listeners;
 import android.view.View;
 import android.widget.TextView;
 import com.haltenny.passgen.model.PasswordType;
-import com.haltenny.passgen.model.password.impl.PasswordServiceImpl;
+import com.haltenny.passgen.viewmodel.password.impl.PasswordServiceImpl;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 

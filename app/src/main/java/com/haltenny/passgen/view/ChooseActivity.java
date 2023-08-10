@@ -14,6 +14,7 @@ public class ChooseActivity extends Activity {
     private Button btn;
     private Button btn2;
     private Button btn3;
+    private Button btn4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
