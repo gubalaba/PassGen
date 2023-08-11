@@ -23,7 +23,7 @@
             android:id="@+id/textView3"
             android:layout_width="318dp"
             android:layout_height="66dp"
-            android:text="Пин-код"
+            android:text="16 Символов"
             android:textAlignment="center"
             android:textColor="#D36AFF"
             android:textSize="48sp"
