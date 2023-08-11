@@ -1,5 +1,6 @@
 package com.haltenny.passgen.view.password_types;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.Button;
@@ -20,7 +21,7 @@ public class Medium extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_eight_symbols);
+        setContentView(R.layout.activity_sixteen_symbols);
 
         generateButton = findViewById(R.id.generate_button);
         passwdText = findViewById(R.id.passwd);

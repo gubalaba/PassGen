@@ -7,18 +7,17 @@
     tools:context=".sixteen_symbols">
 
     <TextView
-            android:id="@+id/passwd2"
-            android:layout_width="414dp"
-            android:layout_height="115dp"
+            android:id="@+id/passwd"
+            android:layout_width="411dp"
+            android:layout_height="118dp"
             android:layout_marginTop="32dp"
-            android:background="#00FFFFFF"
             android:textAlignment="center"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView4"
-            app:layout_constraintVertical_bias="0.147" app:layout_constraintHorizontal_bias="0.0"/>
+            app:layout_constraintVertical_bias="0.201" />
     <TextView
         android:id="@+id/textView4"
         android:layout_width="255dp"
@@ -35,25 +34,27 @@
         app:layout_constraintVertical_bias="0.205" />
 
     <Button
-            android:id="@+id/generate_button1"
-            android:layout_width="189dp"
-            android:layout_height="45dp"
+            android:id="@+id/generate_button"
+            android:layout_width="196dp"
+            android:layout_height="46dp"
             android:backgroundTint="#D36AFF"
-            android:background="@drawable/corners"
             android:text="Сгенерировать"
             android:textColor="#FFFFFF"
             app:cornerRadius="25dp"
+            android:background="@drawable/corners"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.758"/>
+            app:layout_constraintVertical_bias="0.734"
+            tools:ignore="TextContrastCheck"
+            tools:text="Сгенерировать"/>
 
     <Button
-            android:id="@+id/copy_button2"
-            android:layout_width="180dp"
-            android:layout_height="52dp"
+            android:id="@+id/copy_button1"
+            android:layout_width="179dp"
+            android:layout_height="47dp"
             android:layout_marginTop="8dp"
             android:background="@drawable/corners"
             android:backgroundTint="#D36AFF"
@@ -65,5 +66,6 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.862"/>
+            app:layout_constraintVertical_bias="0.844"
+            tools:ignore="TextContrastCheck"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
